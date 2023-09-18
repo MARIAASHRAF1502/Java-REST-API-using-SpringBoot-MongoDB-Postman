@@ -1,47 +1,65 @@
 
-# Java REST API using Spring Boot, MongoDB and Postman
-
-This project showcases the development of a robust REST API in Java. This API perform basic CRUD operation and manipulates the data stored in MongoDB database, by utilizing the powerful Spring Boot framework for efficient handling of HTTP requests.
+## How to Run this project locally on your machine ?
 
 
+![clone0](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/73072309-bd11-4057-aff4-ceeebd7a127d)
+![clone1](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/63acf951-dd6a-4e00-8e55-2c6fbed5df57)
 
 
-## FAQ
+- Open Spring Boot IDE and navigate to windows -> show view -> other -> Git -> Git Repositories and click Open.
+![clone2](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/035b0c10-4533-4d66-a536-6bb0c8e686a2)
+![clone3](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/33ca552d-b4ef-4b43-be70-3074177b8c42)
 
-#### What is REST API ?
-
-REST API stands for Representational State Transfer Application Programming Interface. REST APIs are commonly used  to communicate data among client and server in a specified data format such as JSON, HTML, XML. REST API works on top of HTTP protocol to perform, GET (retrieve data), POST (create new data), PUT (update existing data), DELETE (remove data) operations efficiently in a Database.  In simple, it a light-weighted Architectural design for data inter-change.
-
-#### What is Spring Boot ?
-
-Spring Boot is a powerful Java-based framework that simplifies the process of building, deploying, and managing web applications. By utilizing Spring Boot, the developers can focus on business logic rather than boilerplate code. Spring Boot comes with preconfigured dependencies, making it simple to connect and communicate with various Databases. Spring Boot makes it easy to create RESTful APIs. Apache Tomcat is the default embedded server for Spring Boot. It's a widely used and well-established web server. It's simple to configure and provides good performance.
-
-#### What is MongoDB ?
-
-MongoDB is a NoSQL (Not Only SQL) database that offers a flexible, document-oriented approach to data storage. It stores data in JSON, allowing for dynamic schema and easy scalability.
-
-#### What is Postman ?
-
-Postman is a widely-used and powerful API development and testing tool that simplifies the process of building, documenting, and testing APIs. Postman supports various request methods (GET, POST, PUT, DELETE, etc.) and allows for parameterization, authentication, and handling of headers. Postman helps streamline the API development process.
+- In the wizard, paste the following respository "https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman.git" in the URI Text field. 
+- Click Next -> choose the Branch as "Master" -> Finish.
 
 
+![clone4](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/bf9bc86a-eef2-47fd-9348-54f35e6e934f)
+- From the "Git Repository Dashboard", Right click on the project folder and choose "Import projects".
+- Now the project folder will be created on the  "Package Explore r" Dashboard to manipulate the files. 
+
+## To Start the Server
+![run](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/11f030ea-5648-4e42-bddc-209275304c70)
+
+- From "Boot Dashboard" -> choose the project -> click on to the start project icon.
+- If the port number is displayed next to the project name, then the server is Running successfully.
+
+## Working of APIs
+
+- Open Postman create a new Collection, Once the collection is created click on the 3 dots which is next to the Collection name,  and click "Add Request" for each Operations.
+
+## Create Operation 
 
 
-## Installation
+![create](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/7a3aba08-182f-468f-87a5-1dcf91d130b9)
 
-Software and tools required to work on this project are as follow
+- Set method as "POST" -> and enter the following the Address "http://localhost:8080/create"
+- Click Body -> choose "raw" -> and format as "JSON", and enter the data in a JSON format as shown in above figure and click "Send".
 
-- JDK - https://www.oracle.com/in/java/technologies/downloads/
-
-- Eclipse IDE - https://www.eclipse.org/downloads/packages/installer
-- Spring Boot Tools for Eclipse - https://spring.io/tools
-- MongoDb (Preferred version - 4 & above) - https://www.mongodb.com/try/download/community
-
-- Postman - https://www.postman.com/downloads/
+## ReadAll Operation
 
 
-## Screenshots
+![readAll](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/2d0fc0ec-9399-4bc5-a103-be21e97b4fe8)
 
-![App Screenshot](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/blob/master/Screenshots/clone0.jpg)
+- Set method as "GET" -> and enter the following the Address "http://localhost:8080/getServer".
+- Click on Send to send the Request. And the response will be display in the response body section.
+
+## Read Operation
+
+![readbyId](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/32b5b96c-50c7-49d9-bb23-290230cd67e6)
+
+- Set method as "GET" -> and enter the following the Address "http://localhost:8080/getServer/{serverId}". Pass the unique Sever Id along with the Address.
+- If the server data exists in the database for the mentioned Server ID, it will fetch those records, otherwise it will display a 404 status code indicating 'No Data Found'.
+
+
+![readbyId](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/48080b69-0737-4d7d-8179-50100ce41886)
+
+
+
+
+
+
+
+
 
 
