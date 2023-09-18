@@ -55,6 +55,28 @@
 ![readbyId](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/48080b69-0737-4d7d-8179-50100ce41886)
 
 
+## Delete Operation
+
+![delete](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/49d58081-f541-4323-ac24-b10412457aac)
+
+- Set method as "DELETE" -> and enter the following the Address "http://localhost:8080/deleteRecord/{serverId}". Pass the unique Sever Id along with the Address.
+- If the server data exists in the database for the mentioned Server ID, it will delete those records, otherwise it will display a 404 status code indicating 'No Record Exist'.
+
+
+![delete](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/bcd6f924-9444-4cf6-8963-bd41fd64a46e)
+
+## Search Operation
+
+![find](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/c837bdb7-8059-4822-a7b0-8e02fd5765ab)
+
+- Set method as "GET" -> and enter the following the Address "http://localhost:8080/findRecord/{ServerName}". Pass the Sever Name along with the Address -> click send.
+- If the server data exists in the database for the mentioned Server Name, it will fetch all the matching records, otherwise it will display a 404 status code indicating 'No Record Exist'.
+
+
+![find](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/c6cf0864-8c0a-40d0-952f-c15c8fbbfe3f)
+
+
+
 
 
 
