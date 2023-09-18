@@ -276,7 +276,9 @@ return new ResponseEntity<>("Record Deleted successfully",HttpStatus.OK);
 ```
 - @PostMapping annotation is used to perform POST operation and it execute when '/create' URI is encountered.
 - @RequestBody is used to get the data from body of the payload, and insert those data into a database and return a HttpStatus code as 201.
+
 ## 
 
-                                                                           Happy Learning !
+                                    Happy Learning !
+
 
