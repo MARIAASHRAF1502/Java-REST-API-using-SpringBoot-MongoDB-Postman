@@ -130,6 +130,13 @@ Software and tools required to work on this project are as follow
 
 
 
+## MongoDB Database
+
+![database](https://github.com/MARIAASHRAF1502/Java-REST-API-using-SpringBoot-MongoDB-Postman/assets/67148270/32d0926a-e0de-418b-94f5-34688fa9e2ff)
+
+
+
+
 
 ## Code Explanation !
 
@@ -276,9 +283,7 @@ return new ResponseEntity<>("Record Deleted successfully",HttpStatus.OK);
 ```
 - @PostMapping annotation is used to perform POST operation and it execute when '/create' URI is encountered.
 - @RequestBody is used to get the data from body of the payload, and insert those data into a database and return a HttpStatus code as 201.
-
 ## 
 
-                                                        Happy Learning !
-
+                                    Happy Learning !
 
